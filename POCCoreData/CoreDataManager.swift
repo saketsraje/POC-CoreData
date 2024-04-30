@@ -15,7 +15,7 @@ class CoreDataManager {
     let context : NSManagedObjectContext
     
     init() {
-        self.container = NSPersistentContainer(name: "POCCoreData")
+        self.container = NSPersistentContainer(name: "Crashable")
         container.loadPersistentStores { description, error in
             if let error = error {
                 print("Error found while loading the Persistend Data. Here is the Error: \(error.localizedDescription)")
@@ -23,16 +23,21 @@ class CoreDataManager {
             
         }
         
-        context = container.viewContext
+        context = container.newBackgroundContext()
+        context.automaticallyMergesChangesFromParent = true
+
     }
     
     func save() {
+        
+    
         do {
             try context.save()
             print("Saved Successfully")
         } catch let error{
             print("\(error.localizedDescription)")
         }
+    
         
         
     }

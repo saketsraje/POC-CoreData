@@ -11,11 +11,14 @@
 		0993FDC52BDA294500BA3B01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993FDC42BDA294500BA3B01 /* ContentView.swift */; };
 		0993FDC72BDA295500BA3B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0993FDC62BDA295500BA3B01 /* Assets.xcassets */; };
 		0993FDCA2BDA295500BA3B01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0993FDC92BDA295500BA3B01 /* Preview Assets.xcassets */; };
-		0993FDCC2BDA295500BA3B01 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993FDCB2BDA295500BA3B01 /* Persistence.swift */; };
+		0993FDCC2BDA295500BA3B01 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993FDCB2BDA295500BA3B01 /* CoreDataManager.swift */; };
 		0993FDCF2BDA295500BA3B01 /* POCCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0993FDCD2BDA295500BA3B01 /* POCCoreData.xcdatamodeld */; };
 		0993FDD92BDA295600BA3B01 /* POCCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993FDD82BDA295600BA3B01 /* POCCoreDataTests.swift */; };
 		0993FDE32BDA295600BA3B01 /* POCCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993FDE22BDA295600BA3B01 /* POCCoreDataUITests.swift */; };
 		0993FDE52BDA295600BA3B01 /* POCCoreDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993FDE42BDA295600BA3B01 /* POCCoreDataUITestsLaunchTests.swift */; };
+		09BDFBB72BDF845700E5863A /* Crashable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09BDFBB52BDF845700E5863A /* Crashable.xcdatamodeld */; };
+		09BDFBB92BDF87C500E5863A /* POCCrashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BDFBB82BDF87C500E5863A /* POCCrashable.swift */; };
+		09BDFBBB2BDFB56700E5863A /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BDFBBA2BDFB56700E5863A /* TestFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +44,16 @@
 		0993FDC42BDA294500BA3B01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0993FDC62BDA295500BA3B01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0993FDC92BDA295500BA3B01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0993FDCB2BDA295500BA3B01 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		0993FDCB2BDA295500BA3B01 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		0993FDCE2BDA295500BA3B01 /* POCCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = POCCoreData.xcdatamodel; sourceTree = "<group>"; };
 		0993FDD42BDA295600BA3B01 /* POCCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0993FDD82BDA295600BA3B01 /* POCCoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCCoreDataTests.swift; sourceTree = "<group>"; };
 		0993FDDE2BDA295600BA3B01 /* POCCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0993FDE22BDA295600BA3B01 /* POCCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCCoreDataUITests.swift; sourceTree = "<group>"; };
 		0993FDE42BDA295600BA3B01 /* POCCoreDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCCoreDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		09BDFBB62BDF845700E5863A /* Crashable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crashable.xcdatamodel; sourceTree = "<group>"; };
+		09BDFBB82BDF87C500E5863A /* POCCrashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCCrashable.swift; sourceTree = "<group>"; };
+		09BDFBBA2BDFB56700E5863A /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,11 @@
 				0993FDC22BDA294500BA3B01 /* POCCoreDataApp.swift */,
 				0993FDC42BDA294500BA3B01 /* ContentView.swift */,
 				0993FDC62BDA295500BA3B01 /* Assets.xcassets */,
-				0993FDCB2BDA295500BA3B01 /* Persistence.swift */,
+				0993FDCB2BDA295500BA3B01 /* CoreDataManager.swift */,
 				0993FDCD2BDA295500BA3B01 /* POCCoreData.xcdatamodeld */,
+				09BDFBB52BDF845700E5863A /* Crashable.xcdatamodeld */,
+				09BDFBB82BDF87C500E5863A /* POCCrashable.swift */,
+				09BDFBBA2BDFB56700E5863A /* TestFile.swift */,
 				0993FDC82BDA295500BA3B01 /* Preview Content */,
 			);
 			path = POCCoreData;
@@ -263,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0993FDCC2BDA295500BA3B01 /* Persistence.swift in Sources */,
+				09BDFBB72BDF845700E5863A /* Crashable.xcdatamodeld in Sources */,
+				0993FDCC2BDA295500BA3B01 /* CoreDataManager.swift in Sources */,
 				0993FDCF2BDA295500BA3B01 /* POCCoreData.xcdatamodeld in Sources */,
+				09BDFBBB2BDFB56700E5863A /* TestFile.swift in Sources */,
 				0993FDC52BDA294500BA3B01 /* ContentView.swift in Sources */,
+				09BDFBB92BDF87C500E5863A /* POCCrashable.swift in Sources */,
 				0993FDC32BDA294500BA3B01 /* POCCoreDataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,11 +450,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 17.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Raje.POCCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -467,11 +480,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 17.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Raje.POCCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -605,6 +619,17 @@
 			);
 			currentVersion = 0993FDCE2BDA295500BA3B01 /* POCCoreData.xcdatamodel */;
 			path = POCCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		09BDFBB52BDF845700E5863A /* Crashable.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09BDFBB62BDF845700E5863A /* Crashable.xcdatamodel */,
+			);
+			currentVersion = 09BDFBB62BDF845700E5863A /* Crashable.xcdatamodel */;
+			name = Crashable.xcdatamodeld;
+			path = "/Users/Saket/Library/CloudStorage/OneDrive-GEMSEDUCATION/Saket/Software/IOS App Development - SwiftUI/POCCoreData/POCCoreData/Crashable.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

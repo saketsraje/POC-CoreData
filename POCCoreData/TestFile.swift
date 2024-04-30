@@ -1,9 +1,3 @@
-//
-//  TestFile.swift
-//  POCCoreData
-//
-//  Created by Saket Raje on 29/04/2024.
-//
 
 import SwiftUI
 
@@ -14,5 +8,5 @@ struct TestFile: View {
 }
 
 #Preview {
-    TestFile()
+    POCCrashable()
 }
